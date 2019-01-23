@@ -1,33 +1,34 @@
 /* Colors = darkgrey:#1e1e1e lightblue:#a7dcfa blue:#639ed0 orange:c4917b green:#718f58 lightgrey:#37383c grey:#252526 */
 
-body, html {
-    background-color: #37383c;
-    color: #a7dcfa
+body,
+html {
+  background-color: #37383c;
+  color: #a7dcfa;
 }
 div {
-    background-color: #1e1e1e
+  background-color: #1e1e1e;
 }
-h1{
-    color: #c4a77b
+h1 {
+  color: #c4a77b;
 }
-h2{
-    color: #c4917b
+h2 {
+  color: #c4917b;
 }
-b{
-    color: #c4917b
+b {
+  color: #c4917b;
 }
-a{
-    color: #639ed0
+a {
+  color: #639ed0;
 }
-p{
-    font-size: 1.2em;
-    line-height: 1.6em
-}
-
-#header{
-    background-color: #252526;
+p {
+  font-size: 1.2em;
+  line-height: 1.6em;
 }
 
-.container{
-    min-height:80vmin
+#header {
+  background-color: #252526;
+}
+
+.container {
+  min-height: 80vmin;
 }
