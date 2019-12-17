@@ -14,10 +14,9 @@
     width: 89px;
     font-weight: bold;
     text-transform: uppercase;
-
 }
 
-.Links div a{
+.Links div.regalurLinks a{
     background: white;
     width: 100%;
     display: inline-block;

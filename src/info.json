@@ -1,7 +1,7 @@
 {
     "name": "Ian Walston",
     "title": "Web Developer",
-    "bio": "I use frameworks and open source package managers to make web applications. Most of my experience is in creating a react frontend for a large Django REST Framework for a company in the biotech field. ",
+    "bio": "I use frameworks and open source package managers to make web applications. I've worked as a frontend developer in the biotech, digital marketing, and entertainment fields. I prefer React.",
     "projects" : [
         {
             "siteUrl":"https://dmvnt.com",

@@ -8,9 +8,10 @@ export class Links extends Component {
     availableModes = ["html", "icons", "json", "plaintext"];
 
     iconsMode() {
-        return this.props.links.map(link => {
-            return <a target='_blank' rel="noopener noreferrer" href={link.url}><img className='icon' alt='link.name' src={`/svg/${link.name}.svg`}/></a>
-        })
+        return <div className={'iconLinks'}>{this.props.links.map(link => {
+            return <a target='_blank' rel="noopener noreferrer" href={link.url}><img className='icon' alt={link.name} src={`/svg/${link.name}.svg`}/></a>
+                
+        })}</div>
     }
 
     jsonMode() {
@@ -30,7 +31,8 @@ export class Links extends Component {
     }
 
     htmlMode() {
-        return this.props.links.map(link => {
+        return <div className='regalurLinks'>{
+        this.props.links.map(link => {
             let displayText = ''
 
             if (link.displayText) {
@@ -48,7 +50,8 @@ export class Links extends Component {
                     <a target='_blank' rel="noopener noreferrer" href={link.url}>{displayText}</a>
                 </div>
             );
-        });
+        })
+    }</div>
     }
 
     render() {
