@@ -9,7 +9,7 @@ export class Links extends Component {
 
     iconsMode() {
         return <div className={'iconLinks'}>{this.props.links.map(link => {
-            return <a target='_blank' rel="noopener noreferrer" href={link.url}><img className='icon' alt={link.name} src={`/svg/${link.name}.svg`}/></a>
+            return <a target='_blank' rel="noopener noreferrer" href={link.url}><img className='icon' alt={link.name} src={`build/svg/${link.name}.svg`}/></a>
                 
         })}</div>
     }
