@@ -1,7 +1,7 @@
 {
     "name": "Ian Walston",
     "title": "Web Developer",
-    "bio": "I use frameworks and open source package managers to make web applications. I've worked as a frontend developer in the biotech, digital marketing, and entertainment fields. I prefer React.",
+    "bio": "I make web application by typing on a keyboard.",
     "projects" : [
         {
             "siteUrl":"https://dmvnt.com",
@@ -24,10 +24,9 @@
             "summary": "Memory game"
         },{
             "siteUrl": "https://goodcobeats.web.app",
-
             "tech": "jQuery | Firebase",
             "name" : "Good Co Beats",
-            "summary" : "Simple e-commerce site"
+            "summary" : "Storefront"
         }
     ],
     "links":[

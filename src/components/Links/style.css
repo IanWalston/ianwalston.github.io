@@ -1,12 +1,10 @@
 .Links{
     border-radius: 8px;    
-    background: #42a2b9;
-    height: 100%;
+    height: 500px;
 }
 
 .Links div{
-    color: white;
-    padding: 16px;
+    padding: 8px;
 }
 
 .Links div span{
@@ -17,24 +15,23 @@
 }
 
 .Links div.regalurLinks a{
-    background: white;
     width: 100%;
     display: inline-block;
-    color: blue;
     padding: 4px;
     border-radius: 4px; 
 }
 
 .Links textarea{
     width: 100%;
-    height: 100%;
+    height: 80%;
     resize: vertical;
+    padding: 4px 12px;
 
 }
 
 .Links textarea.json{
-    background: black;
-    color: orange
+    background: #1e1e1e;
+    color: #a7dcfa;
 }
 
 .Links .buttons{
@@ -43,11 +40,10 @@
 }
 
 .Links button{
-    background: #28a745;
-    color: white;
     font-size: 18px;
     border-radius: 4px; 
-    padding: 2px 8px;
+    padding: 4px 16px;
+    border: 0;
 }
 
 .Links .icon{

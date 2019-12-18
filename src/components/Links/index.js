@@ -40,7 +40,7 @@ export class Links extends Component {
             } else {
                 displayText = link.url.replace(/^https:\/\//, "");                
                 if (displayText.length >= 40) {
-                    displayText = displayText.slice(0, 39) + "...";
+                    displayText = displayText.slice(0, 38) + "...";
                 }
             }
 
@@ -54,13 +54,31 @@ export class Links extends Component {
     }</div>
     }
 
+    componentWillMount(){
+        document.addEventListener('mousedown', this.handleClick, false)
+    }
+    componentWillUnmount(){
+        document.removeEventListener('mousedown', this.handleClick, false)
+    }
+    handleClick = (e) =>{
+        if (this.node.contains(e.target)){
+            return; 
+        }
+
+        this.setState({mode: 'html'})
+    }
+
     render() {
         return (
-            <div className="Links">
+            <div className="Links" ref={node => this.node = node}>
+                <h2 className='text-center'>Links</h2>
                 <div className="buttons">
                     {this.availableModes.map(mode => {
                         return (
-                            <button onClick={() => this.setState({ mode })}>
+                            <button 
+                                onClick={() => this.setState({ mode })}
+                                className={(this.state.mode === mode ? 'active' : null) + ' btn btn-info'}
+                            >
                                 {mode}
                             </button>
                         );
