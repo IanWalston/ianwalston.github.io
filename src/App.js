@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Info from "./components/Info";
 import Projects from "./components/Projects/index";
 import Links from "./components/Links";
-import { Row, Col } from 'react-bootstrap'
+import { Row, Col } from "react-bootstrap";
 
 export class App extends Component {
     render() {
@@ -19,11 +19,13 @@ export class App extends Component {
                 </Row>
                 <hr className="my-4" />
                 <Row>
-                    <Projects projects={ian.projects} />
+                    <Col>
+                        <Projects projects={ian.projects} />
+                    </Col>
                 </Row>
                 <hr className="mt-4" />
                 <footer class="page-footer font-small text-center py-3">
-                        Ian Walston 2020
+                    Ian Walston 2020
                 </footer>
             </div>
         );

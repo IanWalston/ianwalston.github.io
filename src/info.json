@@ -1,62 +1,66 @@
 {
     "name": "Ian Walston",
     "title": "Web Developer",
-    "bio": "I make web application by typing on a keyboard. ",
-    "projects" : [
+    "bio": "I make web application by typing on a keyboard.",
+    "projects": [
         {
-            "siteUrl":"https://dmvnt.com",
-            "codeUrl":"https://github.com/IanWalston/DMVNT",
-            "tech":"React | Express | AWS-S3",
-            "name": "DMV Entertainment",
-            "summary": "Video host",
-            "description": "An express server holds urls for videos stored in aws-s3 buckets. These urls are served to a react frontend via API. The react frontend is optimized for iphone but is also compatible with most modern browsers."
-        },{
             "siteUrl": "https://ianwalston.github.io/QuickMaths/",
-            "codeUrl":"https://github.com/IanWalston/QuickMaths",
+            "codeUrl": "https://github.com/IanWalston/QuickMaths",
             "tech": "jQuery",
             "name": "Quick Maths",
             "summary": "Math game"
-        },{
+        },
+        {
             "siteUrl": "https://ianwalston.github.io/Color-Memory/",
             "codeUrl": "https://github.com/IanWalston/Memory-Balls",
             "tech": "React",
             "name": "Color Memory",
             "summary": "Memory game"
-        },{
+        },
+        {
             "siteUrl": "https://goodcobeats.web.app",
             "tech": "jQuery | Firebase",
-            "name" : "Good Co Beats",
-            "summary" : "Storefront"
-        },{
+            "name": "Good Co Beats",
+            "summary": "Storefront"
+        },
+        {
+            "siteUrl": "https://dmvnt.com",
+            "codeUrl": "https://github.com/IanWalston/DMVNT",
+            "tech": "React | Express | AWS-S3",
+            "name": "DMV Entertainment",
+            "summary": "Video host",
+            "description": "An express server holds urls for videos stored in aws-s3 buckets. These urls are served to a react frontend via API. The react frontend is optimized for iphone but is also compatible with most modern browsers."
+        },
+        {
             "siteUrl": "https://ianwalston.github.io/Dna-Rna-Protein/",
             "codeUrl": "https://github.com/IanWalston/Dna-Rna-Protein",
             "tech": "JavaScript | HTML | CSS",
-            "name" : "Dna-Rna-Protein",
-            "summary" : "Biology Education Tool "
+            "name": "Dna-Rna-Protein",
+            "summary": "Biology Education Tool "
         }
     ],
-    "links":[
+    "links": [
         {
-            "name":"email",
-            "url":"mailto:ikwalston@comcast.net",
+            "name": "email",
+            "url": "mailto:ikwalston@comcast.net",
             "displayText": "ikwalston@comcast.net"
         },
         {
-            "name":"phone",
-            "url":"tel:3017856988",
+            "name": "phone",
+            "url": "tel:3017856988",
             "displayText": "+1 301-785-6988"
         },
         {
-            "name":"resume",
-            "url":"https://docs.google.com/document/d/1lAU7CjmXdeQg7WOp6yfqbPaLAsR5iG5-zzhj0KVKlOw"
+            "name": "resume",
+            "url": "https://docs.google.com/document/d/1lAU7CjmXdeQg7WOp6yfqbPaLAsR5iG5-zzhj0KVKlOw"
         },
         {
-            "name":"github",
-            "url":"https://github.com/IanWalston"
+            "name": "github",
+            "url": "https://github.com/IanWalston"
         },
         {
-            "name":"linkedin",
-            "url":"https://linkedin.com/in/ianwalston"
+            "name": "linkedin",
+            "url": "https://linkedin.com/in/ianwalston"
         }
-    ]   
+    ]
 }
