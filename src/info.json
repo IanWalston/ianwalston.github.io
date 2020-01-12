@@ -1,7 +1,7 @@
 {
     "name": "Ian Walston",
     "title": "Web Developer",
-    "bio": "I make web application by typing on a keyboard.",
+    "bio": "I make web application by typing on a keyboard. ",
     "projects" : [
         {
             "siteUrl":"https://dmvnt.com",
@@ -32,7 +32,7 @@
             "codeUrl": "https://github.com/IanWalston/Dna-Rna-Protein",
             "tech": "JavaScript | HTML | CSS",
             "name" : "Dna-Rna-Protein",
-            "summary" : "Biology Education Tool"
+            "summary" : "Biology Education Tool "
         }
     ],
     "links":[
