@@ -10,7 +10,7 @@ export class Projects extends Component {
                 <CardDeck>
                     {this.props.projects.map(project => {
                         return (
-                            <Col sm={6} md={4} lg={3}>
+                            <Col sm={6} md={4} lg={3} className="mt-4">
                                 <Card>
                                     <Card.Body className="card-body">
                                         <h5 className="card-title">
