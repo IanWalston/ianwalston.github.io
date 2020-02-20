@@ -24,14 +24,6 @@
             "summary": "Storefront"
         },
         {
-            "siteUrl": "https://dmvnt.com",
-            "codeUrl": "https://github.com/IanWalston/DMVNT",
-            "tech": "React | Express | AWS-S3",
-            "name": "DMV Entertainment",
-            "summary": "Video host",
-            "description": "An express server holds urls for videos stored in aws-s3 buckets. These urls are served to a react frontend via API. The react frontend is optimized for iphone but is also compatible with most modern browsers."
-        },
-        {
             "siteUrl": "https://ianwalston.github.io/Dna-Rna-Protein/",
             "codeUrl": "https://github.com/IanWalston/Dna-Rna-Protein",
             "tech": "JavaScript | HTML | CSS",
