@@ -32,7 +32,7 @@ export default function Links(props) {
                         {modeName}
                     </Button>
                 ))}
-                <Button onClick={getRandomMode}>random</Button>
+                <Button onClick={getRandomMode} variant='warning'>random</Button>
             </div>
                     {{
                         html: <HtmlLinks {...props} />,
