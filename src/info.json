@@ -4,6 +4,12 @@
     "bio": "Front-end focused full stack web developer",
     "projects": [
         {
+            "siteUrl": "https://chemanimate.com",
+            "tech": "Node | Express | API | SVG | CSS",
+            "name": "ChemAnimate",
+            "summary": "Chemical reaction animations"
+        },
+        {
             "siteUrl": "https://ianwalston.github.io/QuickMaths/",
             "codeUrl": "https://github.com/IanWalston/QuickMaths",
             "tech": "jQuery",
