@@ -1,18 +1,20 @@
 import React, { Component } from 'react'
+import { Typography } from '@material-ui/core'
 import './style.css'
 
-export class Info extends Component {
-    render() {
-        const ian = this.props.ian
-        return (
-            <div>
-                <h1 className='display-4'>{ian.name}</h1>
-                <h2>{ian.title}</h2>
-                <p className='lead'>{ian.bio}</p>
+const Info = (props) => {
+    const developerInfo = props.developerInfo
+    return (
+        <>
+            <Typography variant='h3'>{developerInfo.name}</Typography>
+            <Typography variant='h4'>{developerInfo.title}</Typography>
+            <Typography variant='h5'>{developerInfo.bio}</Typography>
+            <Typography variant='h6' mb={8}>
                 <a href='https://github.com/IanWalston/ianwalston.github.io'>See the React code for this portfolio</a>
-            </div>
-        )
-    }
+            </Typography>
+        </>
+    )
 }
+
 
 export default Info

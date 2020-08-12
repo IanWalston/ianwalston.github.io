@@ -1,57 +1,54 @@
 import React, { Component } from "react";
 import "./style.css";
-import { Row, Col, Card, CardDeck, Button } from "react-bootstrap";
+import { Card, CardContent, CardActions, Button, Grid, Typography, Link } from "@material-ui/core";
 
 export class Projects extends Component {
     render() {
         return (
             <div>
                 <h2>Projects</h2>
-                <CardDeck>
+                <Grid container spacing={2}>
                     {this.props.projects.map(project => {
                         return (
-                            <Col sm={6} md={4} lg={3} className="mt-4">
+                            <Grid item>
                                 <Card>
-                                    <Card.Body className="card-body">
-                                        <h5 className="card-title">
+                                    <CardContent>
+                                        <Typography variant="h5">
                                             {project.summary}
-                                        </h5>
-                                        <p className="card-text">
+                                        </Typography>
+                                        <Typography>
                                             {project.tech}
-                                        </p>
-                                    </Card.Body>
-                                    <Card.Footer>
-                                        <a
+                                        </Typography>
+                                    </CardContent>
+                                    <CardActions>
+                                        <Button
+                                            variant="outlined"
                                             href={project.siteUrl}
-                                            target="_blank"
-                                            className="btn btn-primary"
                                         >
                                             site
-                                        </a>
+                                        </Button>
                                         {project.codeUrl ? (
-                                            <a
-                                                target="_blank"
-                                                className="float-right d-block btn btn-success"
+                                            <Button
+                                                variant="outlined"
                                                 href={project.codeUrl}
                                                 disabled={!project.codeUrl}
                                             >
                                                 code
-                                            </a>
-                                        ) : (
-                                            <Button
-                                                variant="success"
-                                                className="float-right d-block"
-                                                disabled
-                                            >
-                                                code
                                             </Button>
-                                        )}
-                                    </Card.Footer>
+                                        ) : (
+                                                <Button
+                                                    variant="outlined"
+                                                    disabled
+                                                >
+                                                    code
+                                                </Button>
+                                            )}
+                                    </CardActions>
                                 </Card>
-                            </Col>
+                            </Grid>
                         );
                     })}
-                </CardDeck>
+                </Grid>
             </div>
         );
     }

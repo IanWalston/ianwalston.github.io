@@ -1,4 +1,5 @@
 import React from 'react'
+import { TextareaAutosize } from '@material-ui/core'
 
 export default function index(props) {
     let text = "";
@@ -6,8 +7,13 @@ export default function index(props) {
     props.links.map(link => {
         return (text += `${link.name}: ${
             link.displayText ? link.displayText : link.url
-        }\n\n`);
+            }\n`);
     });
 
-    return <textarea value={text} />;
+    return <TextareaAutosize
+    style={{width:'100%'}}
+        fullwidth
+        rowsMax={5}
+        defaultValue={text}
+    />;
 }
