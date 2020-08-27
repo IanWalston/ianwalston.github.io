@@ -7,7 +7,7 @@ export default function index(props) {
         <Grid container>
             {props.links.map(link => {
                 return (
-                    <Box mx={2}>
+                    <Box mx={2} key={link.name}>
                         <a
                             target="_blank"
                             rel="noopener noreferrer"

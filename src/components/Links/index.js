@@ -42,6 +42,7 @@ export default function Links(props) {
                     <ButtonGroup color="primary" mb="4">
                         {availableModes.map(modeName => (
                             <Button
+                                key={modeName}
                             onClick={() => setMode(modeName)}
                             className={mode === modeName && "active"}
                             >

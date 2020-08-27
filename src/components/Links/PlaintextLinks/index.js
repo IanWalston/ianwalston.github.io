@@ -12,7 +12,7 @@ export default function index(props) {
 
     return <TextareaAutosize
     style={{width:'100%'}}
-        fullwidth
+        fullwidth="true"
         rowsMax={5}
         defaultValue={text}
     />;

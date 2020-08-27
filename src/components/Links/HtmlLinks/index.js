@@ -16,7 +16,7 @@ export default function index(props) {
                 }
 
                 return (
-                    <div>
+                    <div key={link.name}>
                         <span>{link.name}: </span>
                         <a
                             target="_blank"

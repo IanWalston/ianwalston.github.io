@@ -19,7 +19,9 @@ export class App extends Component {
                     <Grid item xs={12}>
                         <Projects projects={developerInfo.projects} />
                     </Grid>
-                    Ian Walston 2020
+                    <Grid item xs={12}>
+                        Ian Walston 2020
+                    </Grid>
                 </Grid>
             </Container>
         );

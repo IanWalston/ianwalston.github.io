@@ -10,7 +10,7 @@ export class Projects extends Component {
                 <Grid container spacing={2}>
                     {this.props.projects.map(project => {
                         return (
-                            <Grid item>
+                            <Grid item key={project.name}>
                                 <Card>
                                     <CardContent>
                                         <Typography variant="h5">
