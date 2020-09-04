@@ -7,23 +7,15 @@ import JsonLinks from './JsonLinks'
 import PlaintextLinks from './PlaintextLinks'
 
 export default function Links(props) {
-    const [mode, setMode] = useState("html");
+    const [mode, setMode] = useState("icons");
 
     const availableModes = ["html", "icons", "json", "plaintext"];
-
-    const getRandomMode = () => {
-        let newMode = "";
-        do {
-            newMode = availableModes[Math.floor(Math.random() * 4)];
-        } while (newMode === mode);
-        setMode(newMode)
-    };
 
     return (
         <Card>
             <CardContent>
                 <Typography variant="h6" >Links and Contact Info</Typography>
-                <Box height="120px">
+                <Box id='link-box'>
                     {{
                         html: <HtmlLinks {...props} />,
                         icons: <IconsLinks  {...props} />,
@@ -43,8 +35,8 @@ export default function Links(props) {
                         {availableModes.map(modeName => (
                             <Button
                                 key={modeName}
-                            onClick={() => setMode(modeName)}
-                            className={mode === modeName && "active"}
+                                onClick={() => setMode(modeName)}
+                                className={mode === modeName && "active"}
                             >
                                 {modeName}
                             </Button>
