@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Info from "./components/Info";
 import Projects from "./components/Projects/index";
 import Links from "./components/Links";
-import { Container, Grid } from "@material-ui/core";
+import { Container, Grid, Typography } from "@material-ui/core";
 
 export class App extends Component {
     render() {
@@ -20,7 +20,9 @@ export class App extends Component {
                         <Projects projects={developerInfo.projects} />
                     </Grid>
                     <Grid item xs={12}>
-                        Ian Walston 2020
+                        <Typography align='center'>
+                            Ian Walston 2020
+                        </Typography>
                     </Grid>
                 </Grid>
             </Container>

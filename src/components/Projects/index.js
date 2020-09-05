@@ -22,14 +22,14 @@ export class Projects extends Component {
                                     </CardContent>
                                     <CardActions>
                                         <Button
-                                            variant="outlined"
+                                            color="primary"
                                             href={project.siteUrl}
                                         >
                                             site
                                         </Button>
                                         {project.codeUrl ? (
                                             <Button
-                                                variant="outlined"
+                                                color="primary"
                                                 href={project.codeUrl}
                                                 disabled={!project.codeUrl}
                                             >
@@ -37,7 +37,7 @@ export class Projects extends Component {
                                             </Button>
                                         ) : (
                                                 <Button
-                                                    variant="outlined"
+                                                    color="primary"
                                                     disabled
                                                 >
                                                     code

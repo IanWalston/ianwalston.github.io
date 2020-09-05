@@ -1,21 +1,21 @@
 import React from "react";
 import { Box, Grid, Typography, Link, IconButton } from "@material-ui/core"
-import svg from "../../Svg";
+import icons from "../../Icons";
 
 export default function index(props) {
     return (
         <Grid container>
             {props.links.map(link => {
                 return (
-                    <Box key={link.name}>
+                    <Box mx={2} key={link.name}>
                         <IconButton
                             target="_blank"
                             rel="noopener noreferrer"
                             href={link.url}
                         >
-                            {svg[link.name]}
+                            {icons[link.name]}
                         </IconButton>
-                        <Typography align='center'>{link.name}</Typography>
+                        <Typography align='center' display='block' variant='caption'>{link.name}</Typography>
                     </Box>
                 );
             })}
