@@ -35,6 +35,13 @@
             "tech": "JavaScript | HTML | CSS",
             "name": "Dna-Rna-Protein",
             "summary": "Biology Education Tool "
+        },
+        {
+            "siteUrl": "https://ianwalston.github.io/SimpleSoundWaveSynth/",
+            "codeUrl": "https://github.com/IanWalston/SimpleSoundWaveSynth",
+            "tech": "React | Material-UI | AudioContext",
+            "name": "Simple Synth",
+            "summary": "Music Education Tool "
         }
     ],
     "links": [
