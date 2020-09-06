@@ -7,7 +7,7 @@
             "siteUrl": "https://unichord-apps.com/chemanimate/",
             "tech": "Node | Express | SVG | CSS",
             "name": "ChemAnimate",
-            "summary": "Chemical reaction animations"
+            "summary": "Chemical animations"
         },
         {
             "siteUrl": "https://ianwalston.github.io/QuickMaths/",
@@ -19,6 +19,7 @@
         {
             "siteUrl": "https://ianwalston.github.io/Color-Memory/",
             "codeUrl": "https://github.com/IanWalston/Memory-Balls",
+            "imgUrl": "https://unichord-apps.com/images/memoryballs.jpg",
             "tech": "React",
             "name": "Color Memory",
             "summary": "Memory game"

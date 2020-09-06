@@ -16,6 +16,9 @@ export class Projects extends Component {
                                         <Typography variant="h5">
                                             {project.summary}
                                         </Typography>
+                                        <Typography variant="h6">
+                                            {project.name}
+                                        </Typography>
                                         <Typography>
                                             {project.tech}
                                         </Typography>
