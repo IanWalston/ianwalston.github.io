@@ -37,7 +37,7 @@
             "summary": "Biology Education Tool "
         },
         {
-            "siteUrl": "https://ianwalston.github.io/SimpleSoundWaveSynth/",
+            "siteUrl": "https://ianwalston.github.io/SimpleSoundWaveSynth/dist",
             "codeUrl": "https://github.com/IanWalston/SimpleSoundWaveSynth",
             "tech": "React | Material-UI | AudioContext",
             "name": "Simple Synth",
