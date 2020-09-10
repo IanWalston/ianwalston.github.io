@@ -4,7 +4,8 @@
     "bio": "Front-end focused full stack web developer",
     "projects": [
         {
-            "siteUrl": "https://unichord-apps.com/chemanimate/",
+            "siteUrl": "https://chemanimate.uk.r.appspot.com/chemanimate-app1/app/",
+            "codeUrl": "https://ianwalston.github.io/chemanimate/",
             "tech": "Node | Express | SVG | CSS",
             "name": "ChemAnimate",
             "summary": "Chemical animations"
