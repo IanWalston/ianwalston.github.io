@@ -19,11 +19,6 @@ export class App extends Component {
                     <Grid item xs={12}>
                         <Projects projects={developerInfo.projects} />
                     </Grid>
-                    <Grid item xs={12}>
-                        <Typography align='center'>
-                            Ian Walston 2020
-                        </Typography>
-                    </Grid>
                 </Grid>
             </Container>
         );
