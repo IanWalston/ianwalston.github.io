@@ -7,9 +7,7 @@ const Projects = ({ projects }) => {
         <Box mt={6}>
             <Typography variant='h4'>Projects</Typography>
             <Grid container spacing={2}>
-                {projects.map(project => {
-                    return <Project project={project}></Project>
-                })}
+                {projects.map(project =>  <Project project={project}></Project>)}
             </Grid>
         </Box>
     )
