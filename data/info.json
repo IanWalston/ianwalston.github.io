@@ -4,8 +4,8 @@
     "bio": "Front-end focused full stack web developer",
     "projects": [
         {
-            "siteUrl": "https://chemanimate.uk.r.appspot.com/chemanimate-app1/app/",
-            "codeUrl": "https://ianwalston.github.io/chemanimate/",
+            "siteUrl": "https://chemanimate.appspot.com/chemanimate-app1/app/",
+            "codeUrl": "https://github.com/IanWalston/chemanimate",
             "tech": "Node | Express | SVG | CSS",
             "name": "ChemAnimate",
             "summary": "Chemical animations"
@@ -27,6 +27,7 @@
         },
         {
             "siteUrl": "https://ianwalston.github.io/ptable-react/build/",
+            "codeUrl": "https://github.com/IanWalston/ptable-react",
             "tech": "React",
             "name": "Periodic Table",
             "summary": "Chemistry Education Tool"
