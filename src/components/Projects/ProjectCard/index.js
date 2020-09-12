@@ -1,7 +1,7 @@
 import React from "react";
 import { Card, CardContent, CardActions, Button, Grid, Typography } from "@material-ui/core";
 
-const ProjectCard = ({ project }) => {
+export default function ProjectCard ({ project }) {
     return (
         <Grid item key={project.name}>
             <Card>
@@ -28,5 +28,3 @@ const ProjectCard = ({ project }) => {
         </Grid>
     )
 }
-
-export default ProjectCard;

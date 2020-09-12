@@ -1,6 +1,5 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { Typography, Link } from '@material-ui/core'
-import './style.css'
 
 const Info = ({props}) => {
     return (
@@ -14,6 +13,5 @@ const Info = ({props}) => {
         </>
     )
 }
-
 
 export default Info

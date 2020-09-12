@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Grid, Typography, Link, IconButton } from "@material-ui/core"
+import { Box, Grid, Typography, IconButton } from "@material-ui/core"
 import icons from "../../Icons";
 
 export default function index(props) {

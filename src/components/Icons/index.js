@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import EmailIcon from '@material-ui/icons/Email';   
 import PhoneIcon from '@material-ui/icons/Phone';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';

@@ -1,9 +1,3 @@
-.Links{
-    border-radius: 8px;    
-    height: 500px;
-}
-
-
 @media only screen and (min-width: 600px) {
     #link-box {
       height: 120px

@@ -2,7 +2,7 @@ import React from "react";
 import { Grid, Typography, Box } from "@material-ui/core";
 import Project from "./ProjectCard"
 
-const Projects = ({ projects }) => {
+export default function Projects  ({ projects }) {
     return (
         <Box mt={6}>
             <Typography variant='h4'>Projects</Typography>
@@ -12,5 +12,3 @@ const Projects = ({ projects }) => {
         </Box>
     )
 }
-
-export default Projects;

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Button, ButtonGroup, Typography, Grid, Card, CardContent, CardActions, Box } from "@material-ui/core";
 import "./style.css";
 import HtmlLinks from './HtmlLinks'
-import IconsLinks from './IconsLinks'
+import IconLinks from './IconLinks'
 import JsonLinks from './JsonLinks'
 import PlaintextLinks from './PlaintextLinks'
 
@@ -11,16 +11,16 @@ export default function Links(props) {
 
     const availableModes = ["html", "icons", "json", "plaintext"];
 
-    return (
-        <Card>
+    return <Card>
             <CardContent>
                 <Typography variant="h6" >Links and Contact Info</Typography>
+                {/* inline switch */}
                 <Box id='link-box'>
                     {{
-                        html: <HtmlLinks {...props} />,
-                        icons: <IconsLinks  {...props} />,
-                        json: <JsonLinks  {...props} />,
-                        plaintext: <PlaintextLinks  {...props} />
+                        "html": <HtmlLinks {...props} />,
+                        "icons": <IconLinks  {...props} />,
+                        "json": <JsonLinks  {...props} />,
+                        "plaintext": <PlaintextLinks  {...props} />
                     }[mode]}
                 </Box>
             </CardContent>
@@ -30,21 +30,18 @@ export default function Links(props) {
                     <Typography variant="caption">
                         Change Link Type
                     </Typography>
- 
+
                     <ButtonGroup color="primary" mb="4">
                         {availableModes.map(modeName => (
                             <Button
                                 key={modeName}
                                 onClick={() => setMode(modeName)}
                                 className={mode === modeName && "active"}
-                            >
-                                {modeName}
-                            </Button>
+                                children={modeName}
+                            />
                         ))}
                     </ButtonGroup>
-                    </Grid>
-               
+                </Grid>
             </CardActions>
         </Card>
-    );
 }

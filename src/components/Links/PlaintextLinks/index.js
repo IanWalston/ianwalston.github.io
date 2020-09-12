@@ -2,12 +2,9 @@ import React from 'react'
 import { TextareaAutosize } from '@material-ui/core'
 
 export default function index(props) {
-    let text = "";
 
-    props.links.map(link => {
-        return (text += `${link.name}: ${
-            link.displayText ? link.displayText : link.url
-            }\n`);
+    const text = props.links.map(link => {
+        return `${link.name}: ${link.displayText ? link.displayText : link.url}\n`
     });
 
     return <TextareaAutosize
