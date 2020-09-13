@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Button, ButtonGroup, Typography, Grid, Card, CardContent, CardActions, Box } from "@material-ui/core";
+import { Button, ButtonGroup, Typography, Grid, Card, CardContent, CardActions, Box, Tooltip } from "@material-ui/core";
 import "./style.css";
 import HtmlLinks from './HtmlLinks'
 import IconLinks from './IconLinks'
@@ -12,36 +12,38 @@ export default function Links(props) {
     const availableModes = ["html", "icons", "json", "plaintext"];
 
     return <Card>
-            <CardContent>
-                <Typography variant="h6" >Links and Contact Info</Typography>
-                {/* inline switch */}
-                <Box id='link-box'>
-                    {{
-                        "html": <HtmlLinks {...props} />,
-                        "icons": <IconLinks  {...props} />,
-                        "json": <JsonLinks  {...props} />,
-                        "plaintext": <PlaintextLinks  {...props} />
-                    }[mode]}
-                </Box>
-            </CardContent>
-            <CardActions>
-                <Grid container direction="column">
+        <CardContent>
+            <Typography variant="h6" >Links and Contact Info</Typography>
+            {/* inline switch */}
+            <Box id='link-box'>
+                {{
+                    "html": <HtmlLinks {...props} />,
+                    "icons": <IconLinks  {...props} />,
+                    "json": <JsonLinks  {...props} />,
+                    "plaintext": <PlaintextLinks  {...props} />
+                }[mode]}
+            </Box>
+        </CardContent>
+        <CardActions>
+            <Grid container direction="column">
 
-                    <Typography variant="caption">
-                        Change Link Type
+                <Typography variant="caption">
+                    Change Link Type
                     </Typography>
 
-                    <ButtonGroup color="primary" mb="4">
-                        {availableModes.map(modeName => (
+                <ButtonGroup color="primary" mb="4">
+                    {availableModes.map(modeName => (
+                        <Tooltip title={mode!==modeName && `Change the format of the links above from ${mode} to ${modeName}`} enterDelay={500} >
                             <Button
                                 key={modeName}
                                 onClick={() => setMode(modeName)}
-                                className={mode === modeName && "active"}
+                                disabled={mode === modeName}
                                 children={modeName}
                             />
-                        ))}
-                    </ButtonGroup>
-                </Grid>
-            </CardActions>
-        </Card>
+                        </Tooltip>
+                    ))}
+                </ButtonGroup>
+            </Grid>
+        </CardActions>
+    </Card>
 }
