@@ -5,7 +5,7 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import DescriptionIcon from '@material-ui/icons/Description';
 import GitHubIcon from '@material-ui/icons/GitHub';
 
-const style = { fontSize: 34 }
+const style = { "fontSize": 34, "color": "101010" }
 
 export default {
     email : <EmailIcon style={style} />,
