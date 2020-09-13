@@ -18,10 +18,10 @@
             "summary": "Math game"
         },
         {
-            "siteUrl": "https://ianwalston.github.io/Color-Memory/",
-            "codeUrl": "https://github.com/IanWalston/Memory-Balls",
+            "siteUrl": "https://ianwalston.github.io/ColorMemory2/",
+            "codeUrl": "https://github.com/IanWalston/ColorMemory2",
             "imgUrl": "https://unichord-apps.com/images/memoryballs.jpg",
-            "tech": "React",
+            "tech": "jQuery | SVG",
             "name": "Color Memory",
             "summary": "Memory game"
         },
