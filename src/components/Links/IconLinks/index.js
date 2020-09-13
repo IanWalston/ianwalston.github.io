@@ -12,10 +12,14 @@ export default function index(props) {
                             target="_blank"
                             rel="noopener noreferrer"
                             href={link.url}
-                        >
-                            {icons[link.name]}
-                        </IconButton>
-                        <Typography align='center' display='block' variant='caption'>{link.name}</Typography>
+                            children={icons[link.name]}
+                        />
+                        <Typography
+                            align='center'
+                            display='block'
+                            variant='caption'
+                            children={link.name}
+                        />
                     </Box>
                 );
             })}
