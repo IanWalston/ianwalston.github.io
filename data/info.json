@@ -4,18 +4,25 @@
     "bio": "Front-end focused full stack web developer",
     "projects": [
         {
+            "siteUrl": "https://ianwalston.github.io/forcediagram/dist/",
+            "codeUrl": "https://github.com/IanWalston/forcediagram",
+            "tech": "React",
+            "name": "Force Diagram",
+            "summary": "Physics Education Tool"
+        },
+        {
             "siteUrl": "https://chemanimate.appspot.com/chemanimate-app1/app/",
             "codeUrl": "https://github.com/IanWalston/chemanimate",
             "tech": "Node | Express | SVG | CSS",
             "name": "ChemAnimate",
-            "summary": "Chemical animations"
+            "summary": "Chemical Animations"
         },
         {
             "siteUrl": "https://ianwalston.github.io/QuickMaths/",
             "codeUrl": "https://github.com/IanWalston/QuickMaths",
             "tech": "jQuery",
             "name": "Quick Maths",
-            "summary": "Math game"
+            "summary": "Math Game"
         },
         {
             "siteUrl": "https://ianwalston.github.io/ColorMemory2/",
@@ -23,7 +30,7 @@
             "imgUrl": "https://unichord-apps.com/images/memoryballs.jpg",
             "tech": "jQuery | SVG",
             "name": "Color Memory",
-            "summary": "Memory game"
+            "summary": "Memory Game"
         },
         {
             "siteUrl": "https://ianwalston.github.io/ptable-react/build/",
