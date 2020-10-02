@@ -77,5 +77,148 @@
             "name": "linkedin",
             "url": "https://linkedin.com/in/ianwalston"
         }
+    ],
+    "stacks": [
+        {
+            "name": "Standard Application",
+            "description": "This is my preferred tech stack for projects that require a backend and database.",
+            "tech": [
+                {
+                    "id": "materialui"
+                },
+                {
+                    "id": "react"
+                },
+                {
+                    "id": "webpack"
+                },
+                {
+                    "id": "express"
+                },
+                {
+                    "id": "postgres"
+                },
+                {
+                    "id": "cypressio"
+                },
+                {
+                    "id": "gcloud"
+                }
+            ]
+        },
+        {
+            "name": "Frontend Application",
+            "description": "This is what I use for a full application that does not require a backend, such as this portfolio.",
+            "tech": [
+                {
+                    "id": "materialui"
+                },
+                {
+                    "id": "react"
+                },
+                {
+                    "id": "webpack"
+                },
+                {
+                    "id": "json"
+                }
+            ]
+        },
+        {
+            "name": "Lightweight Frontend Application",
+            "description": "This is what I use for rapid prototyping or for small projects that don't require a backend",
+            "tech": [
+                {
+                    "id": "bootstrap"
+                },
+                {
+                    "id": "jquery"
+                },
+                {
+                    "id": "json"
+                }
+            ]
+        }
+    ],
+    "tools": [
+        {
+            "id": "vscode"
+        },
+        {
+            "id": "postman"
+        },
+        {
+            "id": "chrome"
+        },
+        {
+            "id": "git"
+        }
+    ],
+    "tech": [
+        {
+            "id": "vscode",
+            "name": "VS Code",
+            "description": "Code editor with integrated terminal and extensions for pretty much anything you'd want to do with code"
+        },
+        {
+            "id": "postman",
+            "name": "Postman",
+            "description": "Make HTTP requests to test backend API points before using them in the frontned."
+        },
+        {
+            "id": "chrome",
+            "name": "Google Chrome",
+            "description": "View frontend application during development. This web browser also provides many useful development tools including a javaScript terminal, network activity recorder, and client storage editor."
+        },
+        {
+            "id": "bootstrap",
+            "name": "Bootstrap",
+            "description": "Frontend Framework"
+        },
+        {
+            "id": "jquery",
+            "name": "jQuery",
+            "description": "Javascript Library"
+        },
+        {
+            "id": "json",
+            "name": "JSON",
+            "description": "Data Storage"
+        },
+        {
+            "id": "materialui",
+            "name": "Material-UI",
+            "description": "User Interface Components"
+        },
+        {
+            "id": "react",
+            "name": "React",
+            "description": "Frontend Framework"
+        },
+        {
+            "id": "webpack",
+            "name": "Webpack",
+            "describe": "Frontend Build Tool"
+        },
+        {
+            "id": "express",
+            "name": "Express",
+            "description": "Server"
+        },
+        {
+            "id": "postgres",
+            "name": "PostgreSQL",
+            "description": "Database"
+        },
+        {
+            "id": "cypressio",
+            "name": "Cypress.io",
+            "description": "Testing"
+        },
+        {
+            "id": "gcloud",
+            "name": "Google Cloud",
+            "description": "Deploy the server with built frontend using Google Cloud App Engine"
+        }
     ]
 }
