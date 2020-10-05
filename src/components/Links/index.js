@@ -33,14 +33,12 @@ export default function Links(props) {
 
                 <ButtonGroup color="primary" mb="4">
                     {availableModes.map(modeName => (
-                        <Tooltip title={mode!==modeName && `Change the format of the links above from ${mode} to ${modeName}`} enterDelay={500} >
-                            <Button
-                                key={modeName}
-                                onClick={() => setMode(modeName)}
-                                disabled={mode === modeName}
-                                children={modeName}
-                            />
-                        </Tooltip>
+                        <Button
+                            key={modeName}
+                            onClick={() => setMode(modeName)}
+                            disabled={mode === modeName}
+                            children={modeName}
+                        />
                     ))}
                 </ButtonGroup>
             </Grid>
