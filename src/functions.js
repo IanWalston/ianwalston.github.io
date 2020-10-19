@@ -1,5 +1,3 @@
 import fs from "fs";
 
-export function getTechDetails (id) {
-
-}
+export function getTechDetails(id) {}
