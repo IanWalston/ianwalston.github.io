@@ -198,7 +198,7 @@
         {
             "id": "webpack",
             "name": "Webpack",
-            "describe": "Frontend Build Tool"
+            "description": "Frontend Build Tool"
         },
         {
             "id": "express",
@@ -218,7 +218,7 @@
         {
             "id": "gcloud",
             "name": "Google Cloud",
-            "description": "Deploy the server with built frontend using Google Cloud App Engine"
+            "description": "Application Host"
         }
     ]
 }
