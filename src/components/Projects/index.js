@@ -5,7 +5,7 @@ import Project from "./ProjectCard";
 export default function Projects({ projects }) {
   return (
     <Box mt={6}>
-      <Typography variant="h4">Projects</Typography>
+      <Typography variant="h3">Projects</Typography>
       <Grid container spacing={2}>
         {projects.map((project) => (
           <Project project={project} key={project}></Project>

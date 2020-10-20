@@ -1,13 +1,12 @@
 import React, { useState } from "react";
 import {
-  Button,
-  ButtonGroup,
   Typography,
   Grid,
   Card,
   CardContent,
   CardActions,
   Box,
+  Slider,
 } from "@material-ui/core";
 import "./style.css";
 import HtmlLinks from "./HtmlLinks";
@@ -15,10 +14,31 @@ import IconLinks from "./IconLinks";
 import JsonLinks from "./JsonLinks";
 import PlaintextLinks from "./PlaintextLinks";
 
-export default function Links(props) {
-  const [mode, setMode] = useState("icons");
+const modes = [
+  {
+    value: 0,
+    label: "json",
+  },
+  {
+    value: 1,
+    label: "plain text",
+  },
+  {
+    value: 2,
+    label: "html",
+  },
+  {
+    value: 3,
+    label: "icons",
+  },
+];
 
-  const availableModes = ["html", "icons", "json", "plaintext"];
+export default function Links(props) {
+  const [mode, setMode] = useState(3);
+
+  function handleSelectMode(e, value) {
+    setMode(value);
+  }
 
   return (
     <Card>
@@ -27,30 +47,34 @@ export default function Links(props) {
         {/* inline switch */}
         <Box id="link-box">
           {
-            {
-              html: <HtmlLinks {...props} />,
-              icons: <IconLinks {...props} />,
-              json: <JsonLinks {...props} />,
-              plaintext: <PlaintextLinks {...props} />,
-            }[mode]
+            [
+              <JsonLinks {...props} />,
+              <PlaintextLinks {...props} />,
+              <HtmlLinks {...props} />,
+              <IconLinks {...props} />,
+            ][mode]
           }
         </Box>
       </CardContent>
       <CardActions>
         <Grid container direction="column">
-          <Typography variant="caption">Change Link Type</Typography>
+          <Box p={2}></Box>
+          <Typography variant="subtitle1">Change Link Type</Typography>
+          <Typography variant="subtitle2">
+            See how the same data can be displayed in multiple ways by using the
+            slider below to select a different type
+          </Typography>
 
-          <ButtonGroup color="primary" mb="4">
-            {availableModes.map((modeName) => (
-              <Button
-                key={modeName}
-                onClick={() => setMode(modeName)}
-                disabled={mode === modeName}
-              >
-                {modeName}
-              </Button>
-            ))}
-          </ButtonGroup>
+          <Box mx={5} my={1}>
+            <Slider
+              defaultValue={3}
+              min={0}
+              max={3}
+              marks={modes}
+              traks={false}
+              onChangeCommitted={handleSelectMode}
+            />
+          </Box>
         </Grid>
       </CardActions>
     </Card>
