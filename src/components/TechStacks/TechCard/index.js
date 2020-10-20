@@ -1,13 +1,24 @@
 import React from "react";
-import { Typography } from "@material-ui/core";
+import { Typography, Grid } from "@material-ui/core";
 
 function TechCard({ info }) {
   return (
-    <div>
-      <Typography>{info.name}</Typography>
-      <Typography>{info.description}</Typography>
-      <img width="200px" src={`img/${info.id}.png`} />
-    </div>
+    <Grid
+      container
+      direction="column"
+      alignItems="center"
+      style={{height:"300px"}}
+    >
+      <Grid item style={{height:"200px"}}>
+        <img width="200px" src={`img/${info.id}.png`} />
+      </Grid>
+      <Grid item>
+        <Typography variant="h5" align="center">{info.name}</Typography>
+      </Grid>
+      <Grid item>
+        <Typography variant="caption" align="center">{info.description}</Typography>
+      </Grid>
+    </Grid>
   );
 }
 

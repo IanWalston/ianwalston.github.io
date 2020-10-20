@@ -14,8 +14,8 @@ export default function ProjectCard({ project }) {
     <Grid item key={project.name}>
       <Card>
         <CardContent>
-          <Typography variant="h5">{project.summary}</Typography>
-          <Typography variant="h6">{project.name}</Typography>
+          <Typography variant="h5">{project.name}</Typography>
+          <Typography variant="h6">{project.summary}</Typography>
           <Typography>{project.tech}</Typography>
         </CardContent>
         <CardActions>
