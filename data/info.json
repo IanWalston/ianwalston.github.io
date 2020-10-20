@@ -108,7 +108,7 @@
         },
         {
             "name": "Frontend Application",
-            "description": "This is what I use for a full application that does not require a backend, such as this portfolio.",
+            "description": "This is what I use for a static application that does not require a backend, such as this portfolio.",
             "tech": [
                 {
                     "id": "materialui"
@@ -125,8 +125,8 @@
             ]
         },
         {
-            "name": "Lightweight Frontend Application",
-            "description": "This is what I use for rapid prototyping or for small projects that don't require a backend",
+            "name": "Simple Frontend Application",
+            "description": "This simple stack allows quick and easy development without the need for a package manager or compiler. It can be used for rapid prototyping, or learning the basics of web development.",
             "tech": [
                 {
                     "id": "bootstrap"

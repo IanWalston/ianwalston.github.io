@@ -8,8 +8,8 @@ function Index({ stacks, techs }) {
       <Box p={3}></Box>
       <Typography variant="h3">Tech Stacks</Typography>
       <Typography>
-        These are a few examples of the technologies I use to build web
-        applications
+        These are a few examples of the technologies
+        I use to build web applications
         </Typography>
 
       {stacks.map((stack) => {
