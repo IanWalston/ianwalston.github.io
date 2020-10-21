@@ -12,6 +12,7 @@ export default function index(props) {
               target="_blank"
               rel="noopener noreferrer"
               href={link.url}
+              color="primary"
             >
               {icons[link.name]}
             </IconButton>

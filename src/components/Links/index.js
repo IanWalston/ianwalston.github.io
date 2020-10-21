@@ -58,22 +58,22 @@ export default function Links(props) {
       </CardContent>
       <CardActions>
         <Grid container direction="column">
-          <Box p={2}></Box>
-          <Typography variant="subtitle1">Change Link Type</Typography>
-          <Typography variant="subtitle2">
-            See how the same data can be displayed in multiple ways by using the
-            slider below to select a different type
+          <Box p={2}>
+            <Typography variant="subtitle1">Change Link Type</Typography>
+            <Typography variant="subtitle2">
+              See how the same data can be displayed in multiple ways by using the
+              slider below to select a different type
           </Typography>
-
-          <Box mx={5} my={1}>
-            <Slider
-              defaultValue={3}
-              min={0}
-              max={3}
-              marks={modes}
-              traks={false}
-              onChangeCommitted={handleSelectMode}
-            />
+            <Box mx={3}>
+              <Slider
+                defaultValue={3}
+                min={0}
+                max={3}
+                marks={modes}
+                traks={false}
+                onChangeCommitted={handleSelectMode}
+              />
+            </Box>
           </Box>
         </Grid>
       </CardActions>
