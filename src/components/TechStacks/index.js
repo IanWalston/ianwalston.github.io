@@ -4,10 +4,10 @@ import { Typography, Grid, Box } from "@material-ui/core";
 
 function TechStacks({ stacks, techs }) {
   return (
-    <div>
+    <div style={{maxWidth:"800px", margin:"0 auto" }}>
       <Box p={3}></Box>
-      <Typography variant="h3">Tech Stacks</Typography>
-      <Typography>
+      <Typography variant="h3" align="center">Tech Stacks</Typography>
+      <Typography align="center">
         A few examples of the technologies I use to build web applications
       </Typography>
 
@@ -15,17 +15,17 @@ function TechStacks({ stacks, techs }) {
         return (
           <Box key={stack.name}>
             <Box p={3}></Box>
-            <Typography variant="h4">{stack.name}</Typography>
-            <Typography>{stack.description}</Typography>
+            <Typography align="center" variant="h4">{stack.name}</Typography>
+            <Typography align="center">{stack.description}</Typography>
 
-            <Grid container>
+            <Grid container >
               {stack.tech.map((eachTechInStack) => {
                 const id = eachTechInStack.id;
 
                 const tech = techs.find((item) => item.id === id);
 
                 return (
-                  <Grid item key={id} xs={12} sm={3} md={2}>
+                  <Grid item key={id} xs={12} sm={4} md={3}>
                     <TechCard info={tech} key={eachTechInStack.id} />
                   </Grid>
                 );
