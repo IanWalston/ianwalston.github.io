@@ -2,7 +2,7 @@ import React from "react";
 import TechCard from "./TechCard";
 import { Typography, Grid, Box } from "@material-ui/core";
 
-function Index({ stacks, techs }) {
+function TechStacks({ stacks, techs }) {
   return (
     <div>
       <Box p={3}></Box>
@@ -13,7 +13,7 @@ function Index({ stacks, techs }) {
 
       {stacks.map((stack) => {
         return (
-          <>
+          <Box key={stack.name}>
             <Box p={3}></Box>
             <Typography variant="h4">{stack.name}</Typography>
             <Typography>{stack.description}</Typography>
@@ -25,17 +25,17 @@ function Index({ stacks, techs }) {
                 const tech = techs.find((item) => item.id === id);
 
                 return (
-                  <Grid item key={stack.name} xs={12} sm={4} md={3} lg={2}>
+                  <Grid item key={id} xs={12} sm={3} md={2}>
                     <TechCard info={tech} key={eachTechInStack.id} />
                   </Grid>
                 );
               })}
             </Grid>
-          </>
+          </Box>
         );
       })}
     </div>
   );
 }
 
-export default Index;
+export default TechStacks;

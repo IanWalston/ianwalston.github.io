@@ -11,36 +11,34 @@ import {
 
 export default function ProjectCard({ project }) {
   return (
-    <Grid item key={project.name}>
-      <Card>
-        <CardContent>
-          <Typography variant="h5">{project.name}</Typography>
-          <Typography variant="h6">{project.summary}</Typography>
-          <Typography>{project.tech}</Typography>
-        </CardContent>
-        <CardActions>
-          <Tooltip
-            title="Links to a live demonstartion of this web application"
-            enterDelay={1000}
-          >
-            <Button color="success" variant="contained" href={project.siteUrl}>
-              try app
+    <Card>
+      <CardContent>
+        <Typography variant="h5">{project.name}</Typography>
+        <Typography variant="h6">{project.summary}</Typography>
+        <Typography>{project.tech}</Typography>
+      </CardContent>
+      <CardActions>
+        <Tooltip
+          title="Links to a live demonstartion of this web application"
+          enterDelay={1000}
+        >
+          <Button  variant="contained" href={project.siteUrl}>
+            try app
             </Button>
-          </Tooltip>
-          <Tooltip
-            title="Links to a public Github repository where you can read the code I wrote for this web application" //eslint-disable-line
-            enterDelay={1000}
+        </Tooltip>
+        <Tooltip
+          title="Links to a public Github repository where you can read the code I wrote for this web application" //eslint-disable-line
+          enterDelay={1000}
+        >
+          <Button
+            color="primary"
+            href={project.codeUrl}
+            disabled={!project.codeUrl}
           >
-            <Button
-              color="primary"
-              href={project.codeUrl}
-              disabled={!project.codeUrl}
-            >
-              see code
+            see code
             </Button>
-          </Tooltip>
-        </CardActions>
-      </Card>
-    </Grid>
+        </Tooltip>
+      </CardActions>
+    </Card>
   );
 }

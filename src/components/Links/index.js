@@ -70,7 +70,7 @@ export default function Links(props) {
                 min={0}
                 max={3}
                 marks={modes}
-                traks={false}
+                track={false}
                 onChangeCommitted={handleSelectMode}
               />
             </Box>

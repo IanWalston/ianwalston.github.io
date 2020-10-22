@@ -9,7 +9,7 @@ const Info = ({ props }) => {
       <Box p={1}></Box>
       {props.bio.split('\n').map(each => {
 
-        return <Box py={1} >
+        return <Box py={1} key={each.slice(10)} >
           <Typography variant="body1" component="p">{each}</Typography>
         </Box>
       })}
