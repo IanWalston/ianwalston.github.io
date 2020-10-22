@@ -4,7 +4,7 @@ import { Typography, Grid, Box } from "@material-ui/core";
 
 function TechStacks({ stacks, techs }) {
   return (
-    <div style={{maxWidth:"800px", margin:"0 auto" }}>
+    <div style={{ maxWidth: "800px", margin: "0 auto" }}>
       <Box p={3}></Box>
       <Typography variant="h4" align="center">Tech Stacks</Typography>
       <Typography align="center">
@@ -18,14 +18,17 @@ function TechStacks({ stacks, techs }) {
             <Typography align="center" variant="h5">{stack.name}</Typography>
             <Typography align="center">{stack.description}</Typography>
 
-            <Grid container >
+            <Grid container
+              justify="center"
+              alignItems="center"
+            >
               {stack.tech.map((eachTechInStack) => {
                 const id = eachTechInStack.id;
 
                 const tech = techs.find((item) => item.id === id);
 
                 return (
-                  <Grid item key={id} xs={12} sm={4} md={3}>
+                  <Grid item key={id} xs={12} sm={3} md={2}>
                     <TechCard info={tech} key={eachTechInStack.id} />
                   </Grid>
                 );

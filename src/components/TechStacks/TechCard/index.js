@@ -6,18 +6,19 @@ function TechCard({ info }) {
     <Grid
       container
       direction="column"
+      justify="center"
       alignItems="center"
-      style={{ height: "200px" }}
+      style={{ height: "150px" }}
     >
-      <Grid item style={{ height: "100px" }}>
-        <img width="96px" src={`img/${info.id}.png`} />
+      <Grid item style={{ height: "50px" }}>
+        <img width="48px" src={`img/${info.id}.png`} />
       </Grid>
       <Grid item>
         <Typography variant="h6" align="center">
           {info.name}
         </Typography>
       </Grid>
-      <Grid item>
+      <Grid item style={{textAlign:"center"}} >
         <Typography variant="caption" align="center">
           {info.description}
         </Typography>

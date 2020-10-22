@@ -8,7 +8,7 @@ export default function Projects({ projects, techs }) {
     <Box mt={6}>
       <Typography variant="h4" align="center">Projects</Typography>
       <Box p={1}></Box>
-      <Box style={{ maxWidth: "600px", margin: "0 auto" }}>
+      <Box style={{ maxWidth: "1000px", margin: "0 auto" }}>
 
         <Carousel
           navButtonsAlwaysVisible
