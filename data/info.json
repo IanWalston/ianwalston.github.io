@@ -1,57 +1,78 @@
 {
     "name": "Ian Walston",
     "title": "Web Software Engineer",
-    "bio": "Welcome to my web development portfolio!\n I'm a front-end focused full stack web developer. I use modern frameworks like React and Express to make web applications.\n I've been a key contributer on a variety of teams, from agile software engineering teams that serve large biotech or advertising companies, to small open-source development communities. \n Check out some samples of my work below.",
+    "bio": "Welcome to my web development portfolio!\n I'm a front-end focused full stack web developer. I use modern frameworks like React and Express to make web applications.\n I've been a key contributor on a variety of teams, from agile software engineering teams that serve large biotech or advertising companies, to small open-source development communities. \n Check out some samples of my work below.",
     "projects": [
         {
             "siteUrl": "https://ianwalston.github.io/forcediagram/dist/",
             "codeUrl": "https://github.com/IanWalston/forcediagram",
-            "tech": ["react", "materialui"],
+            "tech": [
+                "react",
+                "materialui"
+            ],
             "name": "Force Diagram",
             "summary": "Physics Education Tool"
         },
         {
             "siteUrl": "https://chemanimate.appspot.com/chemanimate-app1/app/",
             "codeUrl": "https://github.com/IanWalston/chemanimate",
-            "tech": ["express","svg", "css"],
+            "tech": [
+                "express",
+                "svg",
+                "css"
+            ],
             "name": "ChemAnimate",
             "summary": "Chemical Animations"
         },
         {
-            "siteUrl": "https://ianwalston.github.io/QuickMaths/",
-            "codeUrl": "https://github.com/IanWalston/QuickMaths",
-            "tech": ["jquery"],
-            "name": "Quick Maths",
-            "summary": "Math Game"
+            "siteUrl": "https://ianwalston.github.io/SimpleSoundWaveSynth/dist",
+            "codeUrl": "https://github.com/IanWalston/SimpleSoundWaveSynth",
+            "tech": [
+                "react",
+                "materialui"
+            ],
+            "name": "Simple Synth",
+            "summary": "Music Education Tool "
+        },
+        {
+            "siteUrl": "https://ianwalston.github.io/ptable-react/build/",
+            "codeUrl": "https://github.com/IanWalston/ptable-react",
+            "tech": [
+                "react"
+            ],
+            "name": "Periodic Table",
+            "summary": "Chemistry Education Tool"
         },
         {
             "siteUrl": "https://ianwalston.github.io/ColorMemory2/",
             "codeUrl": "https://github.com/IanWalston/ColorMemory2",
             "imgUrl": "https://unichord-apps.com/images/memoryballs.jpg",
-            "tech": ["jquery","svg"],
+            "tech": [
+                "jquery",
+                "svg"
+            ],
             "name": "Color Memory",
             "summary": "Memory Game"
         },
         {
-            "siteUrl": "https://ianwalston.github.io/ptable-react/build/",
-            "codeUrl": "https://github.com/IanWalston/ptable-react",
-            "tech": ["react"],
-            "name": "Periodic Table",
-            "summary": "Chemistry Education Tool"
+            "siteUrl": "https://ianwalston.github.io/QuickMaths/",
+            "codeUrl": "https://github.com/IanWalston/QuickMaths",
+            "tech": [
+                "jquery"
+            ],
+            "name": "Quick Maths",
+            "summary": "Math Game"
         },
         {
             "siteUrl": "https://ianwalston.github.io/Dna-Rna-Protein/",
             "codeUrl": "https://github.com/IanWalston/Dna-Rna-Protein",
-            "tech": ["javascript", "html", "css"],
+            "tech": [
+                "javascript",
+                "html",
+                "css"
+            ],
             "name": "Dna-Rna-Protein",
             "summary": "Biology Education Tool "
-        },
-        {
-            "siteUrl": "https://ianwalston.github.io/SimpleSoundWaveSynth/dist",
-            "codeUrl": "https://github.com/IanWalston/SimpleSoundWaveSynth",
-            "tech": ["react","materialui"],
-            "name": "Simple Synth",
-            "summary": "Music Education Tool "
         }
     ],
     "links": [

@@ -13,7 +13,7 @@ function TechCard({ info }) {
         <img width="96px" src={`img/${info.id}.png`} />
       </Grid>
       <Grid item>
-        <Typography variant="h5" align="center">
+        <Typography variant="h6" align="center">
           {info.name}
         </Typography>
       </Grid>

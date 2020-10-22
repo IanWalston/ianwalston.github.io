@@ -6,7 +6,7 @@ function TechStacks({ stacks, techs }) {
   return (
     <div style={{maxWidth:"800px", margin:"0 auto" }}>
       <Box p={3}></Box>
-      <Typography variant="h3" align="center">Tech Stacks</Typography>
+      <Typography variant="h4" align="center">Tech Stacks</Typography>
       <Typography align="center">
         A few examples of the technologies I bring together to create web applications
       </Typography>
@@ -15,7 +15,7 @@ function TechStacks({ stacks, techs }) {
         return (
           <Box key={stack.name}>
             <Box p={3}></Box>
-            <Typography align="center" variant="h4">{stack.name}</Typography>
+            <Typography align="center" variant="h5">{stack.name}</Typography>
             <Typography align="center">{stack.description}</Typography>
 
             <Grid container >

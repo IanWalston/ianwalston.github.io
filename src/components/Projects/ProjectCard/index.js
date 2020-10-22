@@ -19,18 +19,19 @@ export default function ProjectCard({ project, techs }) {
               <Typography variant="h5">{project.name}</Typography>
             </Grid>
             <Grid item>
-              <Typography variant="h6">{project.summary}</Typography>
+              <Typography variant="h6" color="textSecondary">{project.summary}</Typography>
+            </Grid>
+            <Grid item>
+              <Box p={1}></Box>
             </Grid>
             <Grid item container justify="space-evenly" align="center">
-
-              {project.tech.map(tech => {
-                const techInfo = techs.find(each => each.id === tech)
-
-                return <Grid item>
+              {project.tech.map(techId => {
+                const techInfo = techs.find(each => each.id === techId)
+                return <Grid item key={techId}>
                   <Tooltip
                     title={techInfo.name}
                   >
-                    <img src={"./img/" + tech + ".png"} width="64px" />
+                    <img src={"./img/" + techId + ".png"} width="64px" />
                   </Tooltip>
                 </Grid>
               })}

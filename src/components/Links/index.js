@@ -61,8 +61,8 @@ export default function Links(props) {
           <Box p={2}>
             <Typography variant="subtitle1">Change Link Type</Typography>
             <Typography variant="subtitle2">
-              See how the same data can be displayed in multiple ways by using the
-              slider below to select a different type
+              See my contact info displayed in different formats by using the
+              slider below
           </Typography>
             <Box mx={3}>
               <Slider
@@ -71,7 +71,7 @@ export default function Links(props) {
                 max={3}
                 marks={modes}
                 track={false}
-                onChangeCommitted={handleSelectMode}
+                onChange={handleSelectMode}
               />
             </Box>
           </Box>
