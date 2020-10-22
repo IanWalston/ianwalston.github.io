@@ -3,7 +3,7 @@ import { Typography, Box } from "@material-ui/core";
 
 const Info = ({ props }) => {
   return (
-    <>
+    <Box pr={6}>
       <Typography variant="h3">{props.name}</Typography>
       <Typography variant="h4" color="textSecondary">{props.title}</Typography>
       <Box p={1}></Box>
@@ -13,7 +13,7 @@ const Info = ({ props }) => {
           <Typography variant="body1" component="p">{each}</Typography>
         </Box>
       })}
-    </>
+    </Box>
   );
 };
 
