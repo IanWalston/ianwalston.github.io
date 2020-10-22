@@ -8,7 +8,7 @@ function TechStacks({ stacks, techs }) {
       <Box p={3}></Box>
       <Typography variant="h3" align="center">Tech Stacks</Typography>
       <Typography align="center">
-        A few examples of the technologies I use to build web applications
+        A few examples of the technologies I bring together to create web applications
       </Typography>
 
       {stacks.map((stack) => {

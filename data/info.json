@@ -6,21 +6,21 @@
         {
             "siteUrl": "https://ianwalston.github.io/forcediagram/dist/",
             "codeUrl": "https://github.com/IanWalston/forcediagram",
-            "tech": "React",
+            "tech": ["react", "materialui"],
             "name": "Force Diagram",
             "summary": "Physics Education Tool"
         },
         {
             "siteUrl": "https://chemanimate.appspot.com/chemanimate-app1/app/",
             "codeUrl": "https://github.com/IanWalston/chemanimate",
-            "tech": "Node | Express | SVG | CSS",
+            "tech": ["express","svg", "css"],
             "name": "ChemAnimate",
             "summary": "Chemical Animations"
         },
         {
             "siteUrl": "https://ianwalston.github.io/QuickMaths/",
             "codeUrl": "https://github.com/IanWalston/QuickMaths",
-            "tech": "jQuery",
+            "tech": ["jquery"],
             "name": "Quick Maths",
             "summary": "Math Game"
         },
@@ -28,28 +28,28 @@
             "siteUrl": "https://ianwalston.github.io/ColorMemory2/",
             "codeUrl": "https://github.com/IanWalston/ColorMemory2",
             "imgUrl": "https://unichord-apps.com/images/memoryballs.jpg",
-            "tech": "jQuery | SVG",
+            "tech": ["jquery","svg"],
             "name": "Color Memory",
             "summary": "Memory Game"
         },
         {
             "siteUrl": "https://ianwalston.github.io/ptable-react/build/",
             "codeUrl": "https://github.com/IanWalston/ptable-react",
-            "tech": "React",
+            "tech": ["react"],
             "name": "Periodic Table",
             "summary": "Chemistry Education Tool"
         },
         {
             "siteUrl": "https://ianwalston.github.io/Dna-Rna-Protein/",
             "codeUrl": "https://github.com/IanWalston/Dna-Rna-Protein",
-            "tech": "JavaScript | HTML | CSS",
+            "tech": ["javascript", "html", "css"],
             "name": "Dna-Rna-Protein",
             "summary": "Biology Education Tool "
         },
         {
             "siteUrl": "https://ianwalston.github.io/SimpleSoundWaveSynth/dist",
             "codeUrl": "https://github.com/IanWalston/SimpleSoundWaveSynth",
-            "tech": "React | Material-UI | AudioContext",
+            "tech": ["react","materialui"],
             "name": "Simple Synth",
             "summary": "Music Education Tool "
         }
@@ -211,6 +211,31 @@
             "id": "cypressio",
             "name": "Cypress.io",
             "description": "Testing"
+        },
+        {
+            "id": "html",
+            "name": "HTML",
+            "description": "Frontend Content"
+        },
+        {
+            "id": "css",
+            "name": "CSS",
+            "description": "Frontend Styles"
+        },
+        {
+            "id": "javascript",
+            "name": "Javascript",
+            "description": "Frontend Programming Language"
+        },
+        {
+            "id": "svg",
+            "name": "SVG",
+            "description": "Scalable Image Format"
+        },
+        {
+            "id": "gcloud",
+            "name": "Google Cloud",
+            "description": "Application Host"
         },
         {
             "id": "gcloud",

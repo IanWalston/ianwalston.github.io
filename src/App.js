@@ -16,7 +16,10 @@ export default function App({ developerInfo }) {
           <Links links={developerInfo.links} />
         </Grid>
         <Grid item xs={12}>
-          <Projects projects={developerInfo.projects} />
+          <Projects 
+            projects={developerInfo.projects}
+            techs={developerInfo.tech}  
+          />
         </Grid>
         <Grid item xs={12}>
           <TechStacks
