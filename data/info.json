@@ -4,6 +4,17 @@
     "bio": "Welcome to my web development portfolio!\n I'm a front-end focused full stack web developer. I use modern frameworks like React and Express to make web applications.\n I've been a key contributor on a variety of teams, from agile software engineering teams that serve large biotech or advertising companies, to small open-source development communities. \n Check out some samples of my work below.",
     "projects": [
         {
+            "siteUrl": "https://qasong.com",
+            "codeUrl": "https://github.com/IanWalston/qasong",
+            "tech": [
+                "react",
+                "materialui",
+                "express"
+            ],
+            "name": "Qasong Music",
+            "summary": "Music Streaming powered by Youtube "
+        },
+        {
             "siteUrl": "https://ianwalston.github.io/forcediagram/dist/",
             "codeUrl": "https://github.com/IanWalston/forcediagram",
             "tech": [
