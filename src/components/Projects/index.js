@@ -1,24 +1,28 @@
 import React from "react";
 import { Grid, Typography, Box } from "@material-ui/core";
 import Project from "./ProjectCard";
-import Carousel from 'react-material-ui-carousel'
 
 export default function Projects({ projects, techs }) {
   return (
     <Box mt={6}>
       <Typography variant="h4" align="center">Projects</Typography>
       <Box p={1}></Box>
-      <Box style={{ maxWidth: "1000px", margin: "0 auto" }}>
-
-        <Carousel
-          navButtonsAlwaysVisible
-          interval={20000}
-          timeout={500}
-          animation="slide"
+      <Box style={{ maxWidth: "1200px", margin: "0 auto" }}>
+        <Grid
+          container
+          alignItems="stretch"
+          spacing={2}
         >
-          {projects.map((project) => (<Project project={project} techs={techs} key={project}></Project>
+          {projects.map((project) => (
+            <Grid item xs={12} sm={6} md={4}>
+              <Project
+                project={project}
+                techs={techs}
+                key={project}
+              />
+            </Grid>
           ))}
-        </Carousel>
+        </Grid>
       </Box>
     </Box>
   );
